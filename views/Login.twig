@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./style.css">
+		<title></title>
+	</head>
+	<body>
+		<h1 id="identifiant">Saisir vos Identifiants</h1>
+		<form action="/loginuser" method="POST">
+			<div id="logincontainer">
+				<label class="logincontenue" for="name">Pseudo</label>
+				<input class="logincontenue" type="text" id="name" name="name" autocomplete="off">
+				<label class="logincontenue" for="password">MDP</label>
+				<input class="logincontenue" type="password" id="password" name="password" autocomplete="off">
+				<button class="logincontenue" type="submit">valider</button>
+			</div>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,156 @@
+<html lang="fr">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+		<link rel="stylesheet" href="./style.css">
+		<title>Portfolio</title>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<img id="logo" src="./image/Union.svg" alt="">
+				<a class="href" href="/displayprojects">Mes Projets</a>
+				<a class="href" href="">Présentation</a>
+				<a class="href" id="login" href="/login">Connexion Administrateur</a>
+			</nav>
+		</header>
+		<main>
+			<div id="Presentation">
+				<div id="image">
+					<img id="picturesofme" src="./image/IMG_9019.jpg" alt="photo de nathan weber">
+				</div>
+				<div id="contenue">
+					<h1>Weber Nathan</h1>
+					<h2 id="firsth2">Developpeur-Concepteur -d’Application</h2>
+					<p>Ne trouvant pas ma place dans le parcours scolaire général je me suis orienté vers une formation
+																																																																																																																																																																																				                    professionel dans le developpement web a l’âge de 17 ans
+					</p>
+				</div>
+			</div>
+			<div id="Compétences">
+				<details id="languagecontainer">
+					<summary id="comp">Compétences</summary>
+					<img class="languageIcons" src="./image/JS.png" alt="JavaScript">
+					<img class="languageIcons" src="./image/html.webp" alt="Html">
+					<img class="languageIcons" src="./image/Css.png" alt="CSS">
+					<img class="languageIcons" src="./image/Boostrap.png" alt="Boostrap">
+				</details>
+
+			</div>
+			<div id="Projets">
+				<h2>Mes Projets</h2>
+				<img id="rectangle1" src="./image/rectangle.png" alt="">
+
+				<div id="carouselExampleIndicators" class="carousel slide">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img id="puissance4" src="./image/puissance4.png" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img id="Morpion" src="./image/Morpionmoi.png" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img id="calculette" src="./image/calculette.png" class="d-block w-100" alt="...">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+			<div id="Parcours">
+				<h2>Mon Parcours</h2>
+				<img id="rectangle2" src="./image/rectangle.png" alt="">
+			</div>
+			<div class="box-timeline">
+
+				<div class="ligne"></div>
+
+				<div class="rond r1" data-anim="1"><img src="./image/livre.png" alt=""></div>
+				<div class="rond r2" data-anim="2"><img src="./image/pioche.png" alt=""></div>
+				<div class="rond r3" data-anim="3"><img src="./image/loupe.png" alt=""></div>
+				<div class="rond r4" data-anim="4"><img src="./image/coché.png" alt=""></div>
+				<div class="rond r5" data-anim="4"><img src="./image/groupe.png" alt=""></div>
+
+
+				<div class="box b1" data-anim="1">
+					<h2>Le Brevet</h2>
+					<p>
+						Obtention de mon Brevet des collèges en 2018
+					</p>
+				</div>
+				<div class="box b2" data-anim="2">
+					<h2>Le Batiment</h2>
+					<p>
+						Plusieurs Années a travailler avec mon pére dans le batiment
+					</p>
+				</div>
+				<div class="box b3" data-anim="3">
+					<h2>Recherche</h2>
+					<p>
+						Recherche d’une voix professionel potentiel pendant plusieurs mois
+					</p>
+
+				</div>
+				<div class="box b4" data-anim="4">
+					<h2>Papier</h2>
+					<p>
+						Je trouve une formation ! j’entame donc toute les démarche seul a l’âge de 17 ans
+					</p>
+				</div>
+				<div class="box b5" data-anim="5">
+					<h2>Intégration</h2>
+					<p>
+						J’intégre cette formation pour me former au developement web
+					</p>
+				</div>
+			</div>
+			<h2 id="contact">Contact</h2>
+			<div id="formulaire">
+				<form id="formmail" action="/sendMail" method="POST">
+					<div id="contenueformmail">
+						<label for="name">Nom</label>
+						<input type="text" id="name" name="name">
+						<label for="email">Votre Email</label>
+						<input type="text" name="email">
+						<label for="message">Message</label>
+						<input type="text" id="message" name="message">
+						<button id="buttonformail" type="submit">Valider</button>
+					</div>
+				</form>
+			</div>
+		</main>
+		<footer>
+			<div>
+				<img src="/image/Union.svg" alt="">
+			</div>
+			<div id="contact">
+				<div id="phone">
+					<img id="telephone" src="./image/telephone.png" alt="">
+					<p>06.47.30.53.80</p>
+				</div>
+				<div id="email">
+					<img id="mail" src="./image/Mail.png" alt="">
+					<p>nathanweber1706@gmail.com</p>
+				</div>
+			</div>
+		</footer>
+		<script src="./main.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+	</body>
+
+</html>

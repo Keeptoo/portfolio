@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./style.css">
+		<title>DisplayPorjects</title>
+	</head>
+	<body id='ProjectBody'>
+		<header>
+			<nav id="headerproject">
+				<h1>Mes Projets</h1>
+				<img id="rectangle1" src="./image/rectangle.png" alt="">
+			</nav>
+		</header>
+		<main>
+			<div id="container">
+					{% for project in projects %}
+						<div class="containerBox">
+							<h2>{{project.name}}</h2>
+							<p>{{project.description}}</p>
+							<a class="LinkGit" href="{{project.liengithub}}">Lien GitHub</a>
+                            <a href="{{project.liensourcegithub}}">Lien source GitHub</a>
+							<img class="imgproject" src="./image/{{project.image}}" alt="">
+						</div>
+					{% endfor %}
+			</div>
+		</main>
+		<footer>
+			<div>
+				<img src="/image/Union.svg" alt="">
+			</div>
+			<div id="contact">
+				<div id="phone">
+					<img id="telephone" src="./image/telephone.png" alt="">
+					<p>06.47.30.53.80</p>
+				</div>
+				<div id="email">
+					<img id="mail" src="./image/Mail.png" alt="">
+					<p>nathanweber1706@gmail.com</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

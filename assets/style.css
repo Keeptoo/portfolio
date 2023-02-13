@@ -1,0 +1,503 @@
+@font-face {
+    font-family: Roboto-ThinItalic;
+    src: url(/assets/font/Roboto-ThinItalic.ttf);
+}
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
+#image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(0, 25, 148);
+    align-items: center;
+    padding: 11px;
+}
+
+.href {
+    width: max-content;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+}
+
+#logo {
+    height: 94px;
+    width: 98px;
+    color: white;
+    margin-right: 67px;
+}
+
+#picturesofme {
+    max-height: 200px;
+    border-radius: 12%;
+    box-shadow: 10px 12px 8px 0px;
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#Presentation {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#firsth2 {
+    font-size: 18px;
+    color: rgb(0, 25, 148);
+}
+
+#Compétences {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: rgb(224, 169, 0);
+}
+
+.languageIcons {
+    height: 100px;
+    margin: 70px;
+}
+
+.languagecontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#comp {
+    margin: 50px;
+    font-size: 35px;
+}
+
+summary {
+    user-select: none;
+    padding: 25px;
+    font-size: 22px;
+    list-style-type: none;
+    text-align: center;
+}
+
+details summary::before {
+    content: "📚";
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform 0.4s ease-out;
+}
+
+details[open] summary::before {
+    transform: rotate(360deg);
+}
+
+#Projets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: Roboto-ThinItalic;
+    margin-top: 134px;
+}
+
+#puissance4 {
+    height: 250px;
+    border-radius: 10px;
+}
+
+#Morpion {
+    height: 250px;
+    border-radius: 10px;
+}
+
+#calculette {
+    height: 250px;
+    border-radius: 10px;
+}
+
+#Projets {
+    margin-top: 179px;
+    margin-bottom: 179px;
+}
+
+#rectangle1 {
+    margin-bottom: 30px;
+}
+
+#Parcours {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto-ThinItalic;
+}
+
+#rectangle2 {
+    margin-bottom: 30px;
+}
+
+.box-timeline {
+    width: 100%;
+    height: 1500px;
+    background: #ffffff;
+    position: relative;
+    padding: 80px 0 250px 0;
+    margin-bottom: 100px;
+}
+
+.ligne {
+    height: 1280px;
+    width: 8px;
+    margin: 0 auto;
+    background: #DFA902;
+}
+
+.rond {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    border: 1px solid #DFA902;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.r1 {
+    top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.r2 {
+    top: 386px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.r3 {
+    top: 692px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.r4 {
+    top: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.r5 {
+    top: 1306px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.box {
+    color: #333;
+    width: 400px;
+    min-height: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    height: auto;
+    background: #f1f1f1;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.b1 {
+    top: 80px;
+    left: calc(50% - 270px);
+}
+
+.b2 {
+    top: 386px;
+    left: calc(50% + 270px);
+}
+
+.b3 {
+    top: 692px;
+    left: calc(50% - 270px);
+}
+
+.b4 {
+    top: 1000px;
+    left: calc(50% + 270px);
+    background-image: url(/assets/image/livre.png);
+}
+
+.b5 {
+    top: 1306px;
+    left: calc(50% - 270px);
+}
+
+
+
+.box p {
+    line-height: 20px;
+    font-size: 18px;
+    margin: 10px 0 20px 0;
+}
+
+footer {
+    bottom: 0;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    background-color: #001994;
+    padding: 21px;
+}
+
+#telephone {
+    height: 40px;
+    margin: 10px;
+}
+
+#mail {
+    height: 40px;
+    margin: 10px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+}
+
+#phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#email {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#login {
+    text-decoration: none;
+    color: white;
+}
+
+#identifiant {
+    text-align: center;
+    color: white;
+    background-color: #001994;
+    margin: 0;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+#logincontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Roboto-ThinItalic;
+}
+
+.logincontenue {
+    margin: 5px;
+}
+
+#contact {
+    font-family: Roboto-ThinItalic;
+    text-align: center;
+}
+
+#contenueformmail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+}
+
+#formmail {
+    border: solid 1px black;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#buttonformail {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 0;
+    background-color: #001994;
+    color: white;
+    box-shadow: 1px 1px 1px 0px black;
+}
+
+#formulaire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#headerproject {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-size: 50px;
+    color: #f1f1f1;
+}
+
+.imgproject {
+    height: 50%;
+    border-radius: 30px;
+}
+
+#container {
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    width: 80%;
+    margin: 70px auto 30px;
+    max-width: 1300px;
+}
+
+#projectBody {
+    margin: auto;
+    align-items: center;
+    width: 100%;
+
+}
+
+.containerBox{
+    overflow: hidden;
+    color: #f1f1f1;
+    background-color:#001994;
+    border-radius: 30px;
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    flex-direction: column;
+}
+
+.containerBox a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #f1f1f1;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+
+p{
+    margin: 0;
+}
+
+@media screen and (max-width: 900px) {
+    #Presentation {
+        display: flex;
+        text-align: center;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    #picturesofme {
+        margin: auto;
+        max-height: 200px;
+        border-radius: 12%;
+        box-shadow: 10px 12px 8px 0px;
+    }
+
+    #contenue {
+        margin-top: 131px;
+        margin-bottom: 120px;
+        margin-left: 169px;
+        text-align: left;
+    }
+
+    .languageIcons {
+        height: 100px;
+        margin: 30px;
+    }
+
+    .box {
+        width: 250px;
+    }
+
+    .b1 {
+        top: 80px;
+        left: calc(50% - 270px);
+    }
+
+    .b2 {
+        top: 386px;
+        left: calc(50% - 270px);
+    }
+
+    .b3 {
+        top: 692px;
+        left: calc(50% - 270px);
+    }
+
+    .b4 {
+        top: 1000px;
+        left: calc(50% - 270px);
+        background-image: url(/assets/image/livre.png);
+    }
+
+    .b5 {
+        top: 1306px;
+        left: calc(50% - 270px);
+    }
+}
