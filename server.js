@@ -32,3 +32,7 @@ mongoose.connect(db,(err)=>{
     }
 })
 
+app.all("*", (req,res)=>{
+    res.redirect('/projects')
+})
+
